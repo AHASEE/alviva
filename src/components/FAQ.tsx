@@ -2,11 +2,17 @@
 
 import { useState } from "react";
 
-export default function FAQ() {
-  const [activeTab, setActiveTab] = useState("current");
-  const [openFAQ, setOpenFAQ] = useState(0);
+interface FAQItem {
+  id: number;
+  question: string;
+  answer: string;
+}
 
-  const currentFeatureFAQs = [
+export default function FAQ() {
+  const [activeTab, setActiveTab] = useState<"current" | "future">("current");
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+
+  const currentFeatureFAQs: FAQItem[] = [
     {
       id: 1,
       question: "How does the AI food scanning work?",
@@ -39,7 +45,7 @@ export default function FAQ() {
     },
   ];
 
-  const futureFeatureFAQs = [
+  const futureFeatureFAQs: FAQItem[] = [
     {
       id: 1,
       question: "When will meal planning be available?",
@@ -74,7 +80,7 @@ export default function FAQ() {
 
   const faqs = activeTab === "current" ? currentFeatureFAQs : futureFeatureFAQs;
 
-  const toggleFAQ = (id) => {
+  const toggleFAQ = (id: number): void => {
     setOpenFAQ(openFAQ === id ? null : id);
   };
 
@@ -96,7 +102,7 @@ export default function FAQ() {
           <button
             onClick={() => {
               setActiveTab("current");
-              setOpenFAQ(0);
+              setOpenFAQ(null);
             }}
             className={`px-6 py-3 rounded-full font-bold transition ${
               activeTab === "current"
@@ -109,7 +115,7 @@ export default function FAQ() {
           <button
             onClick={() => {
               setActiveTab("future");
-              setOpenFAQ(0);
+              setOpenFAQ(null);
             }}
             className={`px-6 py-3 rounded-full font-bold transition ${
               activeTab === "future"
