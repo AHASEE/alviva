@@ -39,15 +39,15 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="bg-gray-50 py-16 md:py-24">
+    <section id="features" className="bg-gray-50 dark:bg-gray-800 py-16 md:py-24 transition">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 transition">
             Powerful Features for Better Health
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 dark:text-gray-300 transition">
             Everything you need to track, analyze, and achieve your goals
           </p>
         </div>
@@ -57,19 +57,19 @@ export default function Features() {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 transform hover:-translate-y-1 cursor-pointer"
+              className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-sm dark:shadow-lg hover:shadow-lg dark:hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 cursor-pointer"
             >
               {/* Image Placeholder */}
-              <div className="w-full h-48 bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center border-b border-purple-100">
+              <div className="w-full h-48 bg-gradient-to-br from-purple-100 dark:from-purple-900 to-purple-50 dark:to-purple-800 flex items-center justify-center border-b border-purple-100 dark:border-purple-800 transition">
                 <div className="text-6xl">{feature.icon}</div>
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 transition">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-base leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed transition">
                   {feature.description}
                 </p>
               </div>
