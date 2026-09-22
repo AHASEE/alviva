@@ -1,0 +1,20 @@
+# Alviva
+
+> Alviva is an AI-powered calorie tracker app. Users scan meals with their camera to instantly get calorie and macronutrient breakdowns, receive personalized nutrition goals from AI, and track daily progress with smart reminders and health insights.
+
+Alviva helps people build better eating habits by making nutrition tracking fast and effortless — no manual food logging required. The AI analyzes food photos, estimates calories and macros, and adapts recommendations to each user's lifestyle and goals.
+
+## Product
+- [Home](https://alviva.app/): Overview of Alviva's features, pricing, and FAQs
+- [Features](https://alviva.app/#features): Food scanning, nutrition tracking, personalized goals, reminders, progress insights, health articles
+- [Pricing](https://alviva.app/#pricing): Subscription plans
+- [FAQ](https://alviva.app/#faq): Common questions about AI food scanning, data security, and accuracy
+
+## Company
+- [Privacy Policy](https://alviva.app/privacy): How user data is collected and used
+- [Terms of Service](https://alviva.app/terms): Terms governing use of the app and website
+- Contact: support@alviva.app
+
+## Availability
+- Android: available on Google Play
+- iOS: not yet available (coming soon)
