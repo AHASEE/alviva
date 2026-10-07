@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Alviva - AI Calorie Tracker",
-  description: "Track your calories with AI",
+  description: "Photo-based calorie estimates and everyday nutrition tracking. Alviva is currently in testing.",
 };
 
 export default function RootLayout({
