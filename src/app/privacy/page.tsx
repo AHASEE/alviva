@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
         <h1 className="text-4xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
-        <p className="text-gray-600 mb-12">Last Updated: October 7, 2026</p>
+        <p className="text-gray-600 mb-12">Last Updated: October 8, 2026</p>
 
         <div className="space-y-8 text-gray-700">
           
@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Website interest forms</h2>
             <p>Our early-access and affiliate forms collect your name, email, contact consent and, for affiliate enquiries, your website or social profile and any optional audience description. We use these details to respond to your request, review affiliate interest and send the program or launch updates you request.</p>
-            <p className="mt-4">FormSubmit processes submissions and delivers them to our email inbox. Please review <a href="https://formsubmit.co/privacy.pdf" className="underline">FormSubmit’s privacy policy</a>. These forms do not create an Alviva account. Please do not submit health information or sensitive documents.</p>
+            <p className="mt-4">Our website endpoint processes submissions and uses Resend to send them to our email inbox. Please review <a href="https://resend.com/legal/privacy-policy" className="underline">Resend’s privacy policy</a>. These forms do not create an Alviva account. Please do not submit health information or sensitive documents.</p>
             <p className="mt-4">We keep interest enquiries while handling your request and related follow-up. To withdraw your interest, stop updates or request deletion of your enquiry, contact <a href="mailto:abdulhaseeb1.dev@gmail.com" className="underline">abdulhaseeb1.dev@gmail.com</a>.</p>
           </section>
 
