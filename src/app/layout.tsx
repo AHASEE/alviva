@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   title: "Alviva - AI Calorie Tracker",
   description: "Photo-based calorie estimates and everyday nutrition tracking. Alviva is currently in testing.",
 };
+
+export const viewport: Viewport = { themeColor: "#07512F" };
 
 export default function RootLayout({
   children,
