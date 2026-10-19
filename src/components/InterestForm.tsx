@@ -1,5 +1,6 @@
 "use client";
 import { useRef, useState, type FormEvent } from "react";
+import { trackLead } from "../lib/analytics";
 
 export default function InterestForm({ affiliate = false }: { affiliate?: boolean }) {
   const busy = useRef(false);
@@ -22,6 +23,7 @@ export default function InterestForm({ affiliate = false }: { affiliate?: boolea
       const result = await response.json();
       if (!response.ok || result.success !== true) throw new Error(result.error || "Unable to submit. Please try again.");
       setStatus("success");
+      trackLead(affiliate ? "affiliate" : "early-access");
       form.reset();
     } catch (reason) {
       setError(reason instanceof Error && reason.name !== "TimeoutError" ? reason.message : "Connection problem. Please try again.");
