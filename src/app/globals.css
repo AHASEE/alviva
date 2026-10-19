@@ -101,3 +101,23 @@
   .site-header .nav-cta{padding:10px 12px;font-size:11px}
   .site-header .navlinks{font-size:11px;gap:7px}
 }
+
+/* Optional, privacy-first GA4 consent controls. */
+.analytics-consent{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:100;display:flex;align-items:center;justify-content:space-between;gap:24px;width:min(940px,calc(100% - 32px));background:#FFFDF8;border:1px solid #D5E5D2;border-top:3px solid var(--orange);border-radius:15px;padding:18px 22px;box-shadow:0 12px 50px rgba(12,62,40,.2)}
+.analytics-consent-content{max-width:570px}
+.analytics-consent-content strong{color:var(--teal);font-size:16px}
+.analytics-consent-content p{margin:6px 0 0;color:#365A44;font-size:13px;line-height:1.55}
+.analytics-consent-content a{text-decoration:underline;text-underline-offset:3px}
+.analytics-consent-actions{display:flex;gap:10px;flex-shrink:0}
+.analytics-consent-actions button{border-radius:10px;padding:11px 16px;font-size:13px;font-weight:700;min-width:106px;cursor:pointer}
+.consent-decline{border:1px solid var(--teal);background:white;color:var(--teal)}
+.consent-accept{border:1px solid var(--teal);background:var(--teal);color:white}
+.consent-decline:hover{background:#EBF5E7}
+.consent-accept:hover{background:#0A673B}
+.footer-cookie-button{border:0;background:none;padding:0;cursor:pointer;font-size:14px;font-weight:600;color:var(--teal);text-align:left}
+.footer-cookie-button:hover,.footer-cookie-button:focus-visible{color:var(--orange-text)}
+@media(max-width:700px){
+.analytics-consent{bottom:10px;flex-direction:column;align-items:stretch;gap:14px;padding:15px 16px}
+.analytics-consent-actions{justify-content:stretch}
+.analytics-consent-actions button{flex:1;padding:11px 8px}
+}
