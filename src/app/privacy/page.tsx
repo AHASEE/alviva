@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
         <h1 className="text-4xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
-        <p className="text-gray-600 mb-12">Last Updated: October 8, 2026</p>
+        <p className="text-gray-600 mb-12">Last Updated: October 19, 2026</p>
 
         <div className="space-y-8 text-gray-700">
           
@@ -21,6 +21,26 @@ export default function PrivacyPolicy() {
             <p>Our early-access and affiliate forms collect your name, email, contact consent and, for affiliate enquiries, your website or social profile and any optional audience description. We use these details to respond to your request, review affiliate interest and send the program or launch updates you request.</p>
             <p className="mt-4">Our website endpoint processes submissions and uses Resend to send them to our email inbox. Please review <a href="https://resend.com/legal/privacy-policy" className="underline">Resend’s privacy policy</a>. These forms do not create an Alviva account. Please do not submit health information or sensitive documents.</p>
             <p className="mt-4">We keep interest enquiries while handling your request and related follow-up. To withdraw your interest, stop updates or request deletion of your enquiry, contact <a href="mailto:abdulhaseeb1.dev@gmail.com" className="underline">abdulhaseeb1.dev@gmail.com</a>.</p>
+          </section>
+
+
+          <section id="cookies">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Optional website analytics and cookies</h2>
+            <p>
+              If you select “Accept analytics” on our website, we use Google
+              Analytics 4 (GA4) to understand website traffic, pages visited,
+              approximate locations, and which of our early-access or affiliate
+              forms are successfully submitted. We do not include your name,
+              email, or form responses in these analytics events.
+            </p>
+            <p className="mt-4">
+              Google Analytics may set first-party cookies such as _ga and
+              _ga_* after you grant permission. If you reject optional
+              analytics, our GA4 tag will not load. You can withdraw or
+              change your choice any time using “Cookie settings” in the
+              footer. See <a className="underline" href="https://policies.google.com/privacy">Google’s Privacy Policy</a>
+              for more information about how Google handles analytics data.
+            </p>
           </section>
 
           {/* Information We Collect */}
