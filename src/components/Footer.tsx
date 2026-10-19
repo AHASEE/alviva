@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CookieSettingsButton } from "./AnalyticsConsent";
 
 export default function Footer() {
   return (
@@ -24,6 +25,7 @@ export default function Footer() {
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
             <a href="mailto:support@alviva.app">Contact</a>
+            <CookieSettingsButton />
           </nav>
         </div>
         <div className="footer-bottom">
