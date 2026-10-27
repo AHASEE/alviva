@@ -20,6 +20,7 @@ export default function Navbar() {
           <Link href="/#features">Features</Link>
           <Link href="/#how-it-works">How it works</Link>
           <Link href="/affiliate">Affiliate</Link>
+          <Link href="/blog">Blog</Link>
           <Link href="/#faq">FAQ</Link>
         </div>
         <Link className="button small nav-cta" href="/#early-access">

@@ -22,6 +22,7 @@ export default function Footer() {
           <nav className="footer-links" aria-label="Footer navigation">
             <Link href="/#features">Features</Link>
             <Link href="/affiliate">Affiliate</Link>
+            <Link href="/blog">Blog</Link>
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
             <a href="mailto:support@alviva.app">Contact</a>
