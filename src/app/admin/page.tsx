@@ -1,0 +1,2 @@
+import {redirect} from "next/navigation";import {adminUser} from "@/lib/blog";import AdminEditor from "./AdminEditor";
+export default async function Admin(){if(!await adminUser())redirect("/admin/login");return <AdminEditor/>}
