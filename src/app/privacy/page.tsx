@@ -1,184 +1,209 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Alviva",
+  description: "How Alviva collects, uses, stores, and deletes personal data.",
+};
+
 export default function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        
-        <h1 className="text-4xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
-        <p className="text-gray-600 mb-12">Last Updated: October 19, 2026</p>
+    <main className="min-h-screen bg-white">
+      <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
+        <h1 className="mb-2 text-4xl font-bold text-gray-900">Privacy Policy</h1>
+        <p className="mb-12 text-gray-600">Last updated: November 1, 2026</p>
 
-        <div className="space-y-8 text-gray-700">
-          
-          {/* Introduction */}
+        <div className="space-y-9 text-gray-700">
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Introduction</h2>
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">About this policy</h2>
             <p>
-              Welcome to Alviva ("we," "us," "our," or "Company"). We are committed to protecting your privacy and ensuring you have a positive experience on our app and website. This Privacy Policy explains our data practices and your rights.
+              This Privacy Policy explains how Alviva collects, uses, stores, shares, and deletes
+              information when you use the Alviva mobile app or alviva.app. Alviva is a nutrition
+              and wellness tracking service. It is not a medical service.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Website interest forms</h2>
-            <p>Our early-access and affiliate forms collect your name, email, contact consent and, for affiliate enquiries, your website or social profile and any optional audience description. We use these details to respond to your request, review affiliate interest and send the program or launch updates you request.</p>
-            <p className="mt-4">Our website endpoint processes submissions and uses Resend to send them to our email inbox. Please review <a href="https://resend.com/legal/privacy-policy" className="underline">Resend’s privacy policy</a>. These forms do not create an Alviva account. Please do not submit health information or sensitive documents.</p>
-            <p className="mt-4">We keep interest enquiries while handling your request and related follow-up. To withdraw your interest, stop updates or request deletion of your enquiry, contact <a href="mailto:abdulhaseeb1.dev@gmail.com" className="underline">abdulhaseeb1.dev@gmail.com</a>.</p>
-          </section>
-
-
-          <section id="cookies">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Optional website analytics and cookies</h2>
-            <p>
-              If you select “Accept analytics” on our website, we use Google
-              Analytics 4 (GA4) to understand website traffic, pages visited,
-              approximate locations, and which of our early-access or affiliate
-              forms are successfully submitted. We do not include your name,
-              email, or form responses in these analytics events.
-            </p>
-            <p className="mt-4">
-              Google Analytics may set first-party cookies such as _ga and
-              _ga_* after you grant permission. If you reject optional
-              analytics, our GA4 tag will not load. You can withdraw or
-              change your choice any time using “Cookie settings” in the
-              footer. See <a className="underline" href="https://policies.google.com/privacy">Google’s Privacy Policy</a>
-              for more information about how Google handles analytics data.
-            </p>
-          </section>
-
-          {/* Information We Collect */}
-          <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Information We Collect</h2>
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">1. Information we collect</h2>
             <div className="space-y-4">
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">1.1 Account Information</h3>
-                <p>When you create an account, we collect: email address, password, name, age, gender, and fitness goals.</p>
+                <h3 className="mb-2 text-xl font-semibold text-gray-900">Account information</h3>
+                <p>
+                  When you create an account, we process your email address, name, authentication
+                  information, and sign-in provider. Passwords are handled by our authentication
+                  provider and are not stored in readable form by Alviva.
+                </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">1.2 Food and Nutrition Data</h3>
-                <p>Food photos, calorie data, macronutrient information, meal history, and dietary preferences you provide or our AI analyzes.</p>
+                <h3 className="mb-2 text-xl font-semibold text-gray-900">Profile and wellness information</h3>
+                <p>
+                  You may choose to provide age, weight, height, gender, activity level, and a daily
+                  calorie goal. We also store the water entries, food scan history, nutrition values,
+                  and streak information that you create in the app.
+                </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">1.3 Activity Data</h3>
-                <p>Step count, water intake, exercise logs, and other health metrics you track through the app.</p>
+                <h3 className="mb-2 text-xl font-semibold text-gray-900">Meal photos and AI processing</h3>
+                <p>
+                  When you choose a meal photo, the image is sent for food-identification processing.
+                  Alviva does not add the meal photo itself to your saved meal-history record; the
+                  resulting food name, nutrition estimate, portion information, and related values may
+                  be saved when you confirm the scan.
+                </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">1.4 Device Information</h3>
-                <p>Device type, OS version, app version, device ID, and crash logs for troubleshooting.</p>
+                <h3 className="mb-2 text-xl font-semibold text-gray-900">Website forms</h3>
+                <p>
+                  Early-access, affiliate, and account-deletion forms may collect your name, email
+                  address, and the information you voluntarily submit so we can respond to your request.
+                  Never submit your password through a website form or support email.
+                </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">1.5 Usage Analytics</h3>
-                <p>How you interact with the app, features used, session duration, and performance metrics.</p>
+                <h3 className="mb-2 text-xl font-semibold text-gray-900">Website analytics</h3>
+                <p>
+                  If you accept optional analytics on alviva.app, Google Analytics may process usage
+                  information such as pages viewed, referral information, general device/browser
+                  information, and approximate location derived from network information. We do not
+                  intentionally send your account password, meal-photo contents, or form text to Google
+                  Analytics.
+                </p>
               </div>
             </div>
           </section>
 
-          {/* How We Use Information */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. How We Use Your Information</h2>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Provide and improve the Alviva service</li>
-              <li>Personalize your experience with AI recommendations</li>
-              <li>Send notifications and reminders</li>
-              <li>Analyze usage patterns to improve features</li>
-              <li>Respond to your support requests</li>
-              <li>Comply with legal obligations</li>
-              <li>Prevent fraud and security issues</li>
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">2. How we use information</h2>
+            <ul className="list-disc space-y-2 pl-6">
+              <li>Authenticate your account and keep you signed in.</li>
+              <li>Provide calorie, macro, water, streak, and history features.</li>
+              <li>Process meal images and return food-identification and nutrition estimates.</li>
+              <li>Personalize parts of the Learn experience using profile information you provide.</li>
+              <li>Operate, secure, troubleshoot, and improve Alviva.</li>
+              <li>Respond to support, affiliate, early-access, and deletion requests.</li>
+              <li>Comply with applicable legal obligations and prevent abuse or fraud.</li>
             </ul>
           </section>
 
-          {/* Data Security */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Data Security</h2>
-            <p>
-              We implement industry-standard security measures including:
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">3. Services that may process data</h2>
+            <p className="mb-4">
+              We use service providers to operate Alviva. Depending on the feature you use, information
+              may be processed by:
             </p>
-            <ul className="list-disc list-inside space-y-2 mt-4">
-              <li>End-to-end encryption for sensitive data</li>
-              <li>Secure HTTPS connections</li>
-              <li>Regular security audits</li>
-              <li>Secure password hashing</li>
-              <li>Two-factor authentication option</li>
-            </ul>
-            <p className="mt-4">
-              However, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security.
-            </p>
-          </section>
-
-          {/* Third-Party Services */}
-          <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Third-Party Services</h2>
-            <p>
-              We use third-party services for app functionality:
-            </p>
-            <ul className="list-disc list-inside space-y-2 mt-4">
-              <li><strong>Supabase:</strong> Backend and authentication</li>
-              <li><strong>Groq:</strong> AI-powered food recognition</li>
-              <li><strong>Firebase:</strong> Analytics and performance monitoring</li>
+            <ul className="list-disc space-y-2 pl-6">
+              <li><strong>Supabase</strong> — authentication and application database services.</li>
+              <li><strong>Groq</strong> — AI processing used for food identification and nutrition fallback estimates.</li>
+              <li><strong>USDA FoodData Central</strong> — nutrition data lookup when available.</li>
+              <li><strong>Render</strong> — hosting for Alviva backend services.</li>
+              <li><strong>Vercel</strong> — hosting for alviva.app.</li>
+              <li><strong>NewsAPI and YouTube/Google</strong> — Learn content discovery and video delivery.</li>
+              <li><strong>Resend</strong> — delivery of website form submissions to our support inbox.</li>
+              <li><strong>Google Analytics</strong> — optional website analytics after consent.</li>
             </ul>
             <p className="mt-4">
-              These services have their own privacy policies. We recommend reviewing them on their websites.
+              These providers process information under their own terms and privacy policies. We do not
+              sell your personal information to advertisers.
             </p>
           </section>
 
-          {/* User Rights */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Your Rights</h2>
-            <p>You have the right to:</p>
-            <ul className="list-disc list-inside space-y-2 mt-4">
-              <li>Access your personal data</li>
-              <li>Request correction of inaccurate data</li>
-              <li>Request deletion of your data</li>
-              <li>Export your data</li>
-              <li>Opt-out of marketing communications</li>
-              <li>Withdraw consent at any time</li>
-            </ul>
-          </section>
-
-          {/* Data Retention */}
-          <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Data Retention</h2>
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">4. Data security</h2>
             <p>
-              We retain your data as long as your account is active. If you delete your account, we'll remove your personal data within 30 days, except where required by law.
+              We use HTTPS for network communication, authenticated API requests for account data, and
+              server-side credentials for privileged database operations. Access to account data is
+              restricted to what is needed to operate the service. No internet service can guarantee
+              absolute security.
             </p>
           </section>
 
-          {/* GDPR & CCPA */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">7. GDPR & CCPA Compliance</h2>
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">5. Data retention</h2>
             <p>
-              For users in the EU, you have rights under GDPR. For California residents, you have rights under CCPA. Contact us to exercise these rights.
+              Account data is generally retained while your Alviva account remains active. Website
+              enquiries are retained for as long as reasonably needed to handle the request and related
+              follow-up. Service providers may retain limited operational or security logs under their
+              own retention policies.
             </p>
           </section>
 
-          {/* Children's Privacy */}
+          <section id="delete-account">
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">6. Account and data deletion</h2>
+            <p>
+              You can permanently delete your Alviva account from the app under
+              <strong> Profile → Delete account</strong>. The in-app deletion flow deletes the Alviva
+              authentication account and associated profile, food-scan, and water-history data handled
+              by our application.
+            </p>
+            <p className="mt-4">
+              If you no longer have the app, you can submit a deletion request on our public{" "}
+              <Link className="font-semibold text-emerald-800 underline" href="/delete-account">
+                Delete Account page
+              </Link>
+              . We may need to verify that you control the account email before completing a web request.
+              We will never ask for your password.
+            </p>
+            <p className="mt-4">
+              We may retain limited information only where required for legal, security, fraud-prevention,
+              or dispute-resolution purposes. Any such retention is limited to the purpose that requires it.
+            </p>
+          </section>
+
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Children's Privacy</h2>
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">7. Your choices and rights</h2>
             <p>
-              Alviva is not intended for children under 13. We do not knowingly collect data from children under 13. If we discover such data, we'll delete it immediately.
+              Depending on where you live, you may have rights to access, correct, delete, or obtain a
+              copy of personal information, or to object to certain processing. You can update profile
+              information in the app and request account deletion at any time.
             </p>
           </section>
 
-          {/* Contact Us */}
+          <section id="cookies">
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">8. Cookies and optional analytics</h2>
+            <p>
+              alviva.app uses optional analytics only after you accept analytics through the website
+              consent controls. You can change that choice through Cookie settings in the website footer.
+              Essential functionality does not require you to accept optional analytics.
+            </p>
+          </section>
+
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Contact Us</h2>
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">9. Children</h2>
             <p>
-              For privacy concerns, data requests, or questions about this policy:
+              Alviva is not intended for children under 13, and we do not knowingly create accounts for
+              children under 13. If you believe a child under 13 has provided personal information,
+              contact us so we can investigate and delete it where appropriate.
             </p>
-            <div className="mt-4 p-4 bg-gray-50 rounded-lg">
-              <p><strong>Email:</strong> privacy@alviva.app</p>
-              <p><strong>Mailing Address:</strong> Alviva Support Team</p>
-              <p><strong>Response Time:</strong> 30 days</p>
-            </div>
           </section>
 
-          {/* Changes to Policy */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Changes to This Policy</h2>
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">10. International use</h2>
             <p>
-              We may update this Privacy Policy occasionally. We'll notify you of significant changes via email or app notification. Your continued use of Alviva means you accept the updated policy.
+              Alviva uses service providers that may process information in countries other than your
+              own. Where required, we rely on appropriate legal mechanisms for international processing.
             </p>
           </section>
 
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">11. Contact</h2>
+            <p>
+              For privacy questions, data requests, or account-deletion help, email{" "}
+              <a className="underline" href="mailto:abdulhaseeb1.dev@gmail.com">
+                abdulhaseeb1.dev@gmail.com
+              </a>
+              .
+            </p>
+          </section>
+
+          <section>
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">12. Changes to this policy</h2>
+            <p>
+              We may update this Privacy Policy as Alviva changes. We will update the date above and,
+              where appropriate, provide additional notice of material changes.
+            </p>
+          </section>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
