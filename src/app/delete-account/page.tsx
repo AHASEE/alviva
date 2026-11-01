@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import DeleteAccountRequestForm from "@/components/DeleteAccountRequestForm";
+import DeleteAccountRequestForm from "../../components/DeleteAccountRequestForm";
 
 export const metadata: Metadata = {
   title: "Delete Account | Alviva",
