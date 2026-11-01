@@ -24,6 +24,7 @@ export default function Footer() {
             <Link href="/affiliate">Affiliate</Link>
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
+            <Link href="/delete-account">Delete Account</Link>
             <a href="mailto:support@alviva.app">Contact</a>
             <CookieSettingsButton />
           </nav>
